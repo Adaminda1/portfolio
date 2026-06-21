@@ -30,6 +30,27 @@ const projects = [
   },
 ];
 
+const concepts = [
+  {
+    emoji: "🏫",
+    name: "Concept — School Website",
+    desc: "A clean, parent-friendly website for a private school: admissions info, programs, staff directory, and a contact form — built to make enrollment easy and the school look established online.",
+    stack: ["Next.js", "Tailwind CSS", "Responsive design"],
+  },
+  {
+    emoji: "☕",
+    name: "Concept — Restaurant Landing Page",
+    desc: "A single-page site for a café or restaurant: menu showcase, location and hours, and a reservation CTA — fast-loading and built to convert visitors into walk-ins.",
+    stack: ["Next.js", "Tailwind CSS", "Mobile-first"],
+  },
+  {
+    emoji: "💪",
+    name: "Concept — Creator Portfolio",
+    desc: "A personal brand site for a fitness coach or creator: program offerings, social proof placeholders, and a booking CTA — built to turn followers into paying clients.",
+    stack: ["Next.js", "Tailwind CSS", "Vercel"],
+  },
+];
+
 const skills = [
   {
     cat: "frontend",
@@ -52,24 +73,26 @@ const skills = [
 const services = [
   {
     num: "01",
-    name: "Landing pages",
+    name: "Landing Pages",
     desc: "Fast, clean, conversion-focused pages built with Next.js and Tailwind",
   },
   {
     num: "02",
-    name: "Web3 tool integration",
-    desc: "Connect your product to onchain data — DexScreener, GoPlus, Helius, and more",
+    name: "Portfolio Websites",
+    desc: "Professional personal or business sites that build instant credibility",
   },
   {
     num: "03",
-    name: "AI-powered features",
-    desc: "Add AI reasoning, summarization, or chat into your existing product",
+    name: "AI-powered MVPs",
+    desc: "From idea to live product — AI features, fast-shipped, fully functional",
   },
-  {
-    num: "04",
-    name: "MVP development",
-    desc: "From idea to live product — solo-built, fast-shipped, fully functional",
-  },
+];
+
+const whoIWorkWith = [
+  "Startup founders",
+  "Creators",
+  "Small businesses",
+  "Web3 teams",
 ];
 
 export default function Home() {
@@ -100,15 +123,14 @@ export default function Home() {
             based in nigeria
           </div>
           <h1 className="font-mono font-bold text-[clamp(32px,6vw,56px)] leading-[1.15] tracking-tight max-w-[780px]">
-            I build onchain tools<br />
-            and{" "}
+            AI &amp;{" "}
             <span className="bg-gradient-to-r from-accent1 to-accent2 bg-clip-text text-transparent">
-              digital products that work.
+              Web3 Builder
             </span>
           </h1>
           <p className="mt-6 text-[17px] text-muted max-w-[560px]">
-            Self-taught builder shipping real, working products on Solana — from token
-            risk-scoring engines to AI reasoning agents. Checked onchain, not on vibes.
+            I build AI-powered products, MVPs, and modern websites using
+            Next.js. Self-taught, solo-built, shipped fast.
           </p>
           <div className="mt-10 flex gap-3.5 flex-wrap">
             <a
@@ -173,9 +195,51 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-[90px] border-b border-line" id="skills">
+      <section className="py-[90px] border-b border-line" id="concepts">
         <div className="max-w-[920px] mx-auto px-6">
           <div className="font-mono text-[13px] text-accent2 mb-3">// 02</div>
+          <h2 className="font-mono font-bold text-[clamp(24px,4vw,32px)] tracking-tight mb-3">
+            concept projects
+          </h2>
+          <p className="text-muted text-[15px] mb-12 max-w-[640px]">
+            Example builds showing what I can create for different business
+            types — not real clients, just demonstrations of capability.
+          </p>
+
+          <div className="grid gap-5">
+            {concepts.map((c) => (
+              <div
+                key={c.name}
+                className="border border-line rounded-[10px] bg-elevated p-8 hover:border-[#2a2a30] transition-colors"
+              >
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="text-2xl leading-none">{c.emoji}</div>
+                  <div className="font-mono font-bold text-[17px] pt-0.5">
+                    {c.name}
+                  </div>
+                </div>
+                <p className="text-muted text-[15px] mb-5 max-w-[640px]">
+                  {c.desc}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {c.stack.map((s) => (
+                    <span
+                      key={s}
+                      className="font-mono text-xs text-muted border border-line px-2.5 py-1 rounded-md"
+                    >
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-[90px] border-b border-line" id="skills">
+        <div className="max-w-[920px] mx-auto px-6">
+          <div className="font-mono text-[13px] text-accent2 mb-3">// 03</div>
           <h2 className="font-mono font-bold text-[clamp(24px,4vw,32px)] tracking-tight mb-12">
             stack &amp; skills
           </h2>
@@ -196,7 +260,7 @@ export default function Home() {
 
       <section className="py-[90px] border-b border-line" id="about">
         <div className="max-w-[920px] mx-auto px-6">
-          <div className="font-mono text-[13px] text-accent2 mb-3">// 03</div>
+          <div className="font-mono text-[13px] text-accent2 mb-3">// 04</div>
           <h2 className="font-mono font-bold text-[clamp(24px,4vw,32px)] tracking-tight mb-12">
             about
           </h2>
@@ -225,9 +289,9 @@ export default function Home() {
 
       <section className="py-[90px] border-b border-line" id="services">
         <div className="max-w-[920px] mx-auto px-6">
-          <div className="font-mono text-[13px] text-accent2 mb-3">// 04</div>
+          <div className="font-mono text-[13px] text-accent2 mb-3">// 05</div>
           <h2 className="font-mono font-bold text-[clamp(24px,4vw,32px)] tracking-tight mb-12">
-            what I can build for you
+            services
           </h2>
           <div className="grid gap-3.5">
             {services.map((s) => (
@@ -248,11 +312,32 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-[90px] border-b border-line" id="who-i-work-with">
+        <div className="max-w-[920px] mx-auto px-6">
+          <div className="font-mono text-[13px] text-accent2 mb-3">// 06</div>
+          <h2 className="font-mono font-bold text-[clamp(24px,4vw,32px)] tracking-tight mb-12">
+            who I work with
+          </h2>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-line border border-line rounded-[10px] overflow-hidden">
+            {whoIWorkWith.map((w) => (
+              <div
+                key={w}
+                className="bg-bg p-6 text-center font-mono text-sm text-muted"
+              >
+                {w}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="py-[90px] pb-[120px]" id="contact">
         <div className="max-w-[920px] mx-auto px-6">
           <div className="border border-line rounded-[10px] bg-elevated px-10 py-12 text-center">
             <h2 className="font-mono text-[clamp(22px,4vw,30px)] mb-3.5">
-              let&apos;s build something
+              Need a website or MVP built?
+              <br />
+              Let&apos;s work together.
             </h2>
             <p className="text-muted mb-8 max-w-[440px] mx-auto">
               Open to freelance work, collaborations, and Web3/AI projects.
@@ -264,7 +349,13 @@ export default function Home() {
                 target="_blank"
                 className="font-mono text-[13px] px-[22px] py-3 rounded-md bg-text text-bg font-semibold hover:bg-accent2 transition-colors"
               >
-                message on x →
+                contact me on x →
+              </a>
+              <a
+                href="mailto:Web3Abdull@gmail.com"
+                className="font-mono text-[13px] px-[22px] py-3 rounded-md border border-line hover:border-muted transition-colors"
+              >
+                email me
               </a>
               <a
                 href="https://t.me/Web3Abdull"
@@ -272,12 +363,6 @@ export default function Home() {
                 className="font-mono text-[13px] px-[22px] py-3 rounded-md border border-line hover:border-muted transition-colors"
               >
                 telegram
-              </a>
-              <a
-                href="mailto:Web3Abdull@gmail.com"
-                className="font-mono text-[13px] px-[22px] py-3 rounded-md border border-line hover:border-muted transition-colors"
-              >
-                email
               </a>
               <a
                 href="https://github.com/Adaminda1"
@@ -285,19 +370,6 @@ export default function Home() {
                 className="font-mono text-[13px] px-[22px] py-3 rounded-md border border-line hover:border-muted transition-colors"
               >
                 github
-              </a>
-              <a
-                href="https://t.me/Web3Abdull"
-                target="_blank"
-                className="font-mono text-[13px] px-[22px] py-3 rounded-md border border-line hover:border-muted transition-colors"
-              >
-                telegram
-              </a>
-              <a
-                href="mailto:Web3Abdull@gmail.com"
-                className="font-mono text-[13px] px-[22px] py-3 rounded-md border border-line hover:border-muted transition-colors"
-              >
-                email
               </a>
             </div>
           </div>
