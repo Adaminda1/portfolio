@@ -4,7 +4,7 @@ const projects = [
   {
     name: "TrenchReads",
     tag: "live",
-    desc: "A Solana token risk-scoring tool that gives traders a clear safety verdict before they buy — combining onchain security data, liquidity analysis, and AI reasoning into one score. Includes a 24/7 Telegram bot for instant checks.",
+    desc: "A Solana token risk-scoring tool that gives traders a clear safety verdict before they buy. Combines onchain security data, liquidity analysis, and AI reasoning into one score. Includes a 24/7 Telegram bot for instant checks.",
     stack: ["Next.js", "GoPlus Security", "DexScreener", "Helius", "Groq AI", "Vercel"],
     links: [
       { label: "live site", href: "https://trenchreads.vercel.app" },
@@ -14,7 +14,7 @@ const projects = [
   {
     name: "FlowSense",
     tag: "live",
-    desc: "An AI-powered crypto morning brief that summarizes overnight market movement, key news, and onchain activity into a clean daily digest — built for traders who want signal without the noise.",
+    desc: "An AI-powered crypto morning brief that summarizes overnight market movement, key news, and onchain activity into a clean daily digest. Built for traders who want signal without the noise.",
     stack: ["Next.js", "AI Summarization", "Vercel"],
     links: [
       { label: "live site", href: "https://flowsense-phi.vercel.app" },
@@ -24,7 +24,7 @@ const projects = [
   {
     name: "TrenchReads Agent",
     tag: "hackathon",
-    desc: "An autonomous reasoning agent built for the Microsoft Agents League Hackathon 2026, extending TrenchReads' risk-analysis logic into a 5-step reasoning system using GPT-4.1-mini with DexScreener and GoPlus as live tools.",
+    desc: "An autonomous reasoning agent built for the Microsoft Agents League Hackathon 2026. Extends TrenchReads' risk-analysis logic into a 5-step reasoning system using GPT-4.1-mini with DexScreener and GoPlus as live tools.",
     stack: ["Azure AI Foundry", "GPT-4.1-mini", "OpenAPI Tools"],
     links: [{ label: "request demo", href: "#contact" }],
   },
@@ -33,20 +33,20 @@ const projects = [
 const concepts = [
   {
     emoji: "🏫",
-    name: "Concept — School Website",
-    desc: "A clean, parent-friendly website for a private school: admissions info, programs, staff directory, and a contact form — built to make enrollment easy and the school look established online.",
+    name: "Concept - School Website",
+    desc: "A clean, parent-friendly website for a private school with admissions info, programs, staff directory, and contact forms. Designed to make enrollment easy and establish the school as professional online.",
     stack: ["Next.js", "Tailwind CSS", "Responsive design"],
   },
   {
     emoji: "☕",
-    name: "Concept — Restaurant Landing Page",
-    desc: "A single-page site for a café or restaurant: menu showcase, location and hours, and a reservation CTA — fast-loading and built to convert visitors into walk-ins.",
+    name: "Concept - Restaurant Landing Page",
+    desc: "A single-page site for a café or restaurant featuring menu showcase, location and hours, and reservation CTA. Fast-loading and optimized to convert visitors into walk-ins.",
     stack: ["Next.js", "Tailwind CSS", "Mobile-first"],
   },
   {
     emoji: "💪",
-    name: "Concept — Creator Portfolio",
-    desc: "A personal brand site for a fitness coach or creator: program offerings, social proof placeholders, and a booking CTA — built to turn followers into paying clients.",
+    name: "Concept - Creator Portfolio",
+    desc: "A personal brand site for a fitness coach or creator showcasing program offerings, social proof, and booking CTA. Built to turn followers into paying clients.",
     stack: ["Next.js", "Tailwind CSS", "Vercel"],
   },
 ];
@@ -84,7 +84,7 @@ const services = [
   {
     num: "03",
     name: "AI-powered MVPs",
-    desc: "From idea to live product — AI features, fast-shipped, fully functional",
+    desc: "From idea to live product with AI features, fast-shipped, fully functional",
   },
 ];
 
@@ -153,7 +153,7 @@ export default function Home() {
         <div className="max-w-[920px] mx-auto px-6">
           <div className="font-mono text-[13px] text-accent2 mb-3">// 01</div>
           <h2 className="font-mono font-bold text-[clamp(24px,4vw,32px)] tracking-tight mb-12">
-            things I&apos;ve shipped
+            things I've shipped
           </h2>
 
           {projects.map((p) => (
@@ -202,8 +202,7 @@ export default function Home() {
             concept projects
           </h2>
           <p className="text-muted text-[15px] mb-12 max-w-[640px]">
-            Example builds showing what I can create for different business
-            types — not real clients, just demonstrations of capability.
+            These examples showcase my design and development approach across different industries. Each represents solutions I can build tailored to your specific business needs.
           </p>
 
           <div className="grid gap-5">
@@ -266,22 +265,17 @@ export default function Home() {
           </h2>
           <div className="text-base text-muted max-w-[680px] leading-[1.8] space-y-[18px]">
             <p>
-              I&apos;m Abdul — a self-taught digital builder based in Nigeria,
-              working at the intersection of Web3 and AI.
+              I'm Abdul, a self-taught digital builder based in Nigeria, working at the intersection of Web3 and AI.
             </p>
             <p>
               My focus is{" "}
               <strong className="text-text font-semibold">
                 onchain safety and transparency
               </strong>
-              . TrenchReads exists because too many traders rely on hype
-              instead of data — I wanted to build something that gives a
-              clear, honest answer fast.
+              . TrenchReads exists because too many traders rely on hype instead of data. I wanted to build something that gives a clear, honest answer fast.
             </p>
             <p>
-              I work solo, ship fast, and care more about whether something
-              actually works than whether it looks impressive in a pitch
-              deck.
+              I work solo, ship fast, and care more about whether something actually works than whether it looks impressive in a pitch deck.
             </p>
           </div>
         </div>
@@ -337,11 +331,10 @@ export default function Home() {
             <h2 className="font-mono text-[clamp(22px,4vw,30px)] mb-3.5">
               Need a website or MVP built?
               <br />
-              Let&apos;s work together.
+              Let's work together.
             </h2>
             <p className="text-muted mb-8 max-w-[440px] mx-auto">
-              Open to freelance work, collaborations, and Web3/AI projects.
-              Reach out and let&apos;s talk.
+              Open to freelance work, collaborations, and Web3/AI projects. Reach out and let's talk.
             </p>
             <div className="flex justify-center gap-3.5 flex-wrap">
               <a
@@ -377,7 +370,7 @@ export default function Home() {
       </section>
 
       <footer className="text-center py-8 font-mono text-xs text-muted">
-        the lab never closes 🔍 — built by web3abdul
+        the lab never closes 🔍 - built by web3abdul
       </footer>
     </main>
   );
